@@ -10,8 +10,7 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
-    },
-    output: {
+    }, output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
@@ -22,21 +21,28 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
         publicPath: "/",
+        startPat: '/',
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
         short_name: 'JATE',
         description: 'A text editor',
-        background_color: '#ffffff',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         crossorigin: 'use-credentials',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+          {
+            src: path.resolve('src/images/favico.svg'),
+            sizes: [96],
             destination: path.join('assets', 'icons'),
           },
 
@@ -63,7 +69,6 @@ module.exports = () => {
             options: {
               presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
-              presets: ['@babel/preset-env'],
             },
           },
         },
