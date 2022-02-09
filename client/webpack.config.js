@@ -25,7 +25,7 @@ module.exports = () => {
       }),
       new WebpackPwaManifest({
         publicPath: "/",
-        startPat: '/',
+        start_url: '/',
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
