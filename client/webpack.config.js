@@ -41,7 +41,7 @@ module.exports = () => {
             destination: path.join('assets', 'icons'),
           },
           {
-            src: path.resolve('src/images/favicon.svg'),
+            src: path.resolve('src/favicon.svg'),
             sizes: [96],
             destination: path.join('assets', 'icons'),
           }
