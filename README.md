@@ -13,8 +13,8 @@ Using Express.Js, various Webpacks, and Idb, I was able to deploy a single-page 
 
 ## Usage
 
-- Clone the repo
-- Run ```npm start``` to install all the needed packages, build the files for the dist directory, and start the server which can be accessed through a localhost
+- After cloning the repo run npm i to install required dependencies. 
+- Once this has finished run npm start to start the application
 
 ## Deployment
 
