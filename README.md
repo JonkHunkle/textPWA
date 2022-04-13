@@ -13,8 +13,7 @@ Using Express.Js, various Webpacks, and Idb, I was able to deploy a single-page 
 
 ## Usage
 
-- After cloning the repo run npm i to install required dependencies. 
-- Once this has finished run npm start to start the application
+- When the user clicks the "install" button, the editor will open in a different window. This can only be initiated once.
 
 ## Deployment
 
