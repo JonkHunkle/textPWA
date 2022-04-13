@@ -2,6 +2,7 @@
 
 ## Description
 
+As a person on the go, I would like to edit text wherever I am.
 Using Express.Js, various Webpacks, and Idb, I was able to deploy a single-page Progressive Web App to Heroku that, once downloaded, allows user to edit text whether or not they are online.
 
 ## Table of Contents
